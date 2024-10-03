@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Including files
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#include <Global.h>
+#include <I2CChip.h>
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// General functions
+//
+////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Default construction.
+ *
+ * @param address Address of chip.
+ * @return
+ *     <p>No results returned.</p>
+ */
+I2CChip::I2CChip(_UINT8 address)
+{
+	//Set address
+	this->address = address;
+}
+
+/**
+ * Get address.
+ *
+ * @param None No parameters needed.
+ * @return
+ *     <p>Address of chip.</p>
+ */
+_UINT8 I2CChip::getAddress() const
+{
+	//Return result.
+	return address;
+}
